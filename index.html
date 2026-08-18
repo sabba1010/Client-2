@@ -189,6 +189,29 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
       font-weight: 800 !important;
       color: var(--color--lime, #d4d800) !important;
     }
+
+    /* Fix ON TRACK / OFF TRACK Side Image Clipping */
+    .otot-home-img-w.is-2,
+    .otot-home-img-w.is-1 {
+      aspect-ratio: auto !important;
+      width: auto !important;
+      max-width: 38vw !important;
+      height: min(88vh, 750px) !important;
+    }
+
+    .otot-home-img-w.is-2 img,
+    .otot-home-img-w.is-1 img,
+    .otot-home-img {
+      object-fit: contain !important;
+      object-position: bottom right !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .otot-home-img-w.is-1 img {
+      object-position: bottom left !important;
+    }
   </style>
 </head>
 
@@ -1919,9 +1942,9 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                     <div class="otot-home-text-col is-1">
                       <div class="otot-home-text-w">
                         <h2 data-anim-high="right, dark-green-tint-1" split-text="lines" class="text-impact-reg-brier">
-                          ON<br /></h2>
+                          OUR<br /></h2>
                         <h2 data-anim-high="right, dark-green-tint-1" split-text="lines"
-                          class="text-impact-reg-mona line-increase">TRACK</h2>
+                          class="text-impact-reg-mona line-increase">SERVICES</h2>
                         <div class="otot-home-text-rive w-embed"><canvas data-rive-object data-rive-file="phrases"
                             data-rive-artboard="phrase_on" data-rive-state-machine="phrase_on" data-rive-fit="contain"
                             data-rive-scrolltrigger="true" data-rive-scrolltrigger-start="top center">
@@ -1929,10 +1952,10 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       </div>
                       <div class="otot-home-p-w">
                         <p split-text="lines" data-anim-high="right, dark-green-tint-1, 200" class="text-body-reg-mona">
-                          Most recent <strong>results</strong>, career stats and photos from trackside.</p>
+                          Tailored <strong>web design</strong>, high-performance development, and digital strategies built for results.</p>
                       </div>
-                      <div class="btn-auto-top"><a title="On Track page" data-btn-rive-rotate="true"
-                          data-btn-rive-hover="" href="/on-track" class="btn-w icon-only w-inline-block">
+                      <div class="btn-auto-top"><a title="Our Services" data-btn-rive-rotate="true"
+                          data-btn-rive-hover="" href="#services" class="btn-w icon-only w-inline-block">
                           <div class="btn-inner">
                             <div class="btn-icon-w">
                               <div class="btn-rive-w is-large w-embed"><canvas data-rive-object data-rive-file="btn-ui"
@@ -1946,13 +1969,13 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                     <div class="otot-home-text-col is-2">
                       <div class="otot-home-text-w">
                         <h2 data-anim-high="left, dark-green-tint-1" split-text="lines" class="text-impact-reg-brier">
-                          OFF<br /></h2>
+                          BRAND<br /></h2>
                         <h2 data-anim-high="left, dark-green-tint-1" split-text="lines"
-                          class="text-impact-reg-mona line-increase">TRACK</h2>
+                          class="text-impact-reg-mona line-increase">STRATEGY</h2>
                       </div>
                       <div class="otot-home-p-w is-2">
                         <p split-text="lines" data-anim-high="left, dark-green-tint-1, 200" class="text-body-reg-mona">
-                          <strong>Campaigns</strong>, shoots and other such promotional materials for fans</p>
+                          Scalable <strong>digital branding</strong>, UI/UX systems, and solutions engineered for long-term growth.</p>
                       </div>
                       <div><a title="Off Track Page" data-btn-rive-rotate="false" data-btn-rive-hover=""
                           href="/off-track" class="btn-w icon-only w-inline-block">
@@ -1970,23 +1993,19 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                 </div>
                 <div class="otot-home-bg">
                   <div class="otot-home-img-w is-1"><img
-                      src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e53_ln4-hp-lando-helmet.webp"
-                      loading="lazy" sizes="100vw"
-                      srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e53_ln4-hp-lando-helmet-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e53_ln4-hp-lando-helmet.webp 834w"
-                      alt="Lando Norris wearing a lime helmet, side profile" class="otot-home-img is-helmet" /></div>
+                      src="/images/leftside.jpg"
+                      loading="lazy" alt="Montclair Studios Left Showcase" class="otot-home-img is-helmet" /></div>
                   <div class="otot-home-img-w is-2"><img
-                      src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e56_ln4-hp-lando-head.webp"
-                      loading="lazy" sizes="100vw"
-                      srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e56_ln4-hp-lando-head-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e56_ln4-hp-lando-head-p-800.webp 800w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67d18655b032045a4dc78e56_ln4-hp-lando-head.webp 898w"
-                      alt="Lando Norris wearing a fleece side profile" class="otot-home-img" /></div>
+                      src="/images/rightside.png"
+                      loading="lazy" alt="Montclair Studios Right Showcase" class="otot-home-img" /></div>
                 </div>
               </div>
             </section>
           </div>
           <section data-otot-bottom="" class="s is-otot-end">
             <div class="otot-home-end-img-w"><img
-                src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302ff5ff89a9a4afb8c19e_ln-home-helm-large.webp"
-                loading="lazy" alt="Lando lifting helmet up" class="image is-otot-home-end" /></div>
+                src="/images/imgi_34_8e8b7b_15ba63fe05054ef894b01b4c179b0ecf~mv2.png"
+                loading="lazy" alt="Montclair Studios Showcase" class="image is-otot-home-end" /></div>
           </section>
         </div>
         <div data-nav-theme-target="light" class="s-group bg-black">
