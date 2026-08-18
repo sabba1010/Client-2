@@ -133,6 +133,62 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
     .taxi-w {
       overflow: visible !important;
     }
+
+    /* Complete Uniform Typography Across All Sections */
+    *, *::before, *::after,
+    body, p, div, span, a, button, h1, h2, h3, h4, h5, h6,
+    .text-impact-lg-mona, .text-impact-lg-brier, .text-impact-reg-brier,
+    .text-impact-reg-mona, .text-body-reg-mona, .text-eyebrow, .btn-text,
+    strong, b, em {
+      font-family: 'Mona Sans Variable', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    }
+
+    /* Prevent strong/b tags from changing font-size, font-family, or letter-spacing */
+    strong, b {
+      font-family: inherit !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      letter-spacing: inherit !important;
+      text-transform: inherit !important;
+      font-weight: 800 !important;
+      color: var(--color--lime, #d4d800) !important;
+    }
+
+    /* Large Stylish Display Typography for Get To Know Me Section */
+    .ms-about-text {
+      text-transform: uppercase !important;
+      font-size: clamp(2rem, 3.5vw, 3.8rem) !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.03rem !important;
+      font-variation-settings: "wght" 700, "wdth" 93 !important;
+      font-weight: 700 !important;
+      color: var(--color--green-off-white-2, #ffffff) !important;
+      max-width: 82rem;
+    }
+
+    .ms-about-text p {
+      margin-bottom: 1.5rem !important;
+      font-family: inherit !important;
+      text-transform: inherit !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      letter-spacing: inherit !important;
+    }
+
+    .ms-about-text p:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .ms-about-text strong,
+    .ms-about-text b {
+      font-family: inherit !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      letter-spacing: inherit !important;
+      text-transform: inherit !important;
+      font-weight: 800 !important;
+      color: var(--color--lime, #d4d800) !important;
+    }
   </style>
 </head>
 
@@ -1678,9 +1734,11 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                 </div>
                 <div data-anim-high="right, lime" split-text="lines" class="text-eyebrow">Get To Know Me</div>
               </div>
-              <div data-anim-high="right, lime-off" split-text="lines" class="text-impact-lg-mona">
-                <strong>Redefining</strong> limits, fighting for <strong>wins</strong>, bringing it all in all ways.
-                Defining a <strong>legacy</strong> in Formula 1 on and off the track.</div>
+              <div class="text-impact-lg-mona ms-about-text">
+                <p><strong>Montclair Studios</strong> was created with one simple goal: to help businesses stand out online with websites and digital strategies that are <strong>clear, functional, and results-driven</strong>.</p>
+                <p>I work <strong>directly with every client</strong> — no middlemen, no outsourcing — so you get a tailored solution, clear communication, and work that’s <strong>built specifically around your goals</strong>.</p>
+                <p>Whether you’re a startup, small business, or growing brand, I focus on creating digital solutions that are <strong>easy to manage, scalable</strong>, and designed to support <strong>long-term growth</strong>.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -1696,26 +1754,22 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-home-1">
                         <div class="horizontal-item-layout is-home-1">
                           <div class="eyebrow-w c-green-off-white-2">
-                            <div split-text="lines" class="text-eyebrow">Qatar, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Montclair Studios</div>
                           </div>
                           <div class="horizontal-item-img-w is-home-1"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa04b14a1ca33c0b25_ln-home-horiz-1.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa04b14a1ca33c0b25_ln-home-horiz-1-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa04b14a1ca33c0b25_ln-home-horiz-1.webp 649w"
-                              alt="Lando in casual clothes walking through paddock"
+                              src="/images/imgi_32_15637655658f4709831e4be2f9a77b79.jpg"
+                              loading="lazy" alt="Montclair Studios Project"
                               class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                       <div class="horizontal-item-w is-home-2">
                         <div class="horizontal-item-layout is-home-2">
                           <div class="eyebrow-w c-green-off-white-2">
-                            <div split-text="lines" class="text-eyebrow">FIA Prize Giving, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Web Development</div>
                           </div>
                           <div class="horizontal-item-img-w is-home-2"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baab12220595c8223b3_ln-home-horiz-2.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baab12220595c8223b3_ln-home-horiz-2-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baab12220595c8223b3_ln-home-horiz-2.webp 656w"
-                              alt="Lando lifting trophy in tux" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_33_8e8b7b_196aae8a2ff84daca330c4cecd2fa719~mv2.jpg"
+                              loading="lazy" alt="Web Development Project" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                     </div>
@@ -1724,25 +1778,23 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-text-callout callout-1">
                         <div class="horizontal-item-layout">
                           <div class="horizontal-item-text-layout">
-                            <div split-text="lines" class="horizontal-item-text">It doesn’t matter <span
-                                class="span-green-off-white-1">where</span> you start, it’s <span
-                                class="span-green-off-white-1">how</span> you progress from there.</div>
+                            <div split-text="lines" class="horizontal-item-text">Crafting <span
+                                class="span-green-off-white-1">digital experiences</span> that elevate <span
+                                class="span-green-off-white-1">your brand</span>.</div>
                             <div class="horizontal-rive-placeholder"><img
-                                src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67cecea4e9d311047dcb51e5_ln4-hw-signature2.svg"
-                                loading="lazy" alt="Lando&#x27;s signature in lime color" class="image" /></div>
+                                src="/images/montclair-logo.png"
+                                loading="lazy" alt="Montclair Studios Logo" class="image" style="max-height: 2.5rem; filter: brightness(0) invert(1);" /></div>
                           </div>
                         </div>
                       </div>
                       <div class="horizontal-item-w is-home3">
                         <div class="horizontal-item-layout">
                           <div class="eyebrow-w c-green-off-white-2">
-                            <div split-text="lines" class="text-eyebrow">Miami GP, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Digital Strategy</div>
                           </div>
                           <div class="horizontal-item-img-w is-home3"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babcf12f0111d96322e_ln-home-horiz-3.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babcf12f0111d96322e_ln-home-horiz-3-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babcf12f0111d96322e_ln-home-horiz-3-p-800.webp 800w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babcf12f0111d96322e_ln-home-horiz-3-p-1080.webp 1080w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babcf12f0111d96322e_ln-home-horiz-3.webp 1464w"
-                              alt="Lando lifting tophy" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_34_8e8b7b_15ba63fe05054ef894b01b4c179b0ecf~mv2.png"
+                              loading="lazy" alt="Digital Strategy Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                     </div>
@@ -1751,23 +1803,21 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-home-4 neg-margin">
                         <div class="horizontal-item-layout">
                           <div class="eyebrow-w c-green-off-white-2">
-                            <div split-text="lines" class="text-eyebrow">Monaco, 2023</div>
+                            <div split-text="lines" class="text-eyebrow">Brand Design</div>
                           </div>
                           <div class="horizontal-item-img-w is-home-5"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa798e2cc6e02ac38a_ln-home-horiz-4.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa798e2cc6e02ac38a_ln-home-horiz-4-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa798e2cc6e02ac38a_ln-home-horiz-4.webp 529w"
-                              alt="Lando playing golf" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_35_84770f_d1ddc1f4883446cc9d86a80cabfb3d8c~mv2.jpg"
+                              loading="lazy" alt="Brand Design Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                       <div class="horizontal-item-w is-5">
                         <div class="horizontal-item-layout is-home-5">
                           <div class="eyebrow-w c-green-off-white-2">
-                            <div split-text="lines" class="text-eyebrow">Britain, 2025</div>
+                            <div split-text="lines" class="text-eyebrow">Custom Solutions</div>
                           </div>
                           <div class="horizontal-item-img-w is-home-4"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68da85d632bfefc552a0faac_Britain-25%20(1).webp"
-                              loading="lazy" width="Auto" alt="Lando in f1 car" class="image is-horizontal-scroll" />
+                              src="/images/imgi_38_nsplsh_8a953106760146db9ee9670139e024ce~mv2.jpg"
+                              loading="lazy" width="Auto" alt="Custom Solutions Showcase" class="image is-horizontal-scroll" />
                           </div>
                           <div data-hide="m" class="horizontal-item-pill-w">
                             <div class="horizontal-item-pill">
@@ -1775,8 +1825,8 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                                 <div class="horizontal-pill-text">1</div>
                               </div>
                               <div class="horizontal-pill-box"><img
-                                  src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/680cbcfdbc4bdc0ef619369f_ln-icon-crossed-flags2.svg"
-                                  loading="lazy" alt="" class="horizontal-pill-icon" /></div>
+                                  src="/images/montclair-logo.png"
+                                  loading="lazy" alt="" class="horizontal-pill-icon" style="filter: brightness(0) invert(1);" /></div>
                             </div>
                           </div>
                         </div>
@@ -1787,13 +1837,11 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-home-6">
                         <div class="horizontal-item-layout">
                           <div class="eyebrow-w c-dark-green-tint-2">
-                            <div split-text="lines" class="text-eyebrow">Battersea, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Creative Direction</div>
                           </div>
                           <div class="horizontal-item-img-w is-home-6"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa14a96f3cdd2f9a95_ln-home-horiz-6.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa14a96f3cdd2f9a95_ln-home-horiz-6-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baa14a96f3cdd2f9a95_ln-home-horiz-6.webp 642w"
-                              alt="Lando holding dog smiling" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_39_cb4d36596015ecc12d2b8a73c98feb62.jpg"
+                              loading="lazy" alt="Creative Direction Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                     </div>
@@ -1801,11 +1849,11 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-home-7">
                         <div class="horizontal-item-layout is-home-7">
                           <div class="eyebrow-w c-dark-green-tint-2">
-                            <div split-text="lines" class="text-eyebrow">High Performance Gala, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Portfolio Projects</div>
                           </div>
                           <div class="horizontal-item-img-w is-home-7"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302bab3ee6e26b1f434a7d_ln-home-horiz-7.webp"
-                              loading="lazy" alt="Lando in tux" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_41_8e8b7b_9676382a4fda44eab8ec6057b83a6530~mv2.jpg"
+                              loading="lazy" alt="Portfolio Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                     </div>
@@ -1814,24 +1862,20 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-home-8 neg-margin">
                         <div class="horizontal-item-layout">
                           <div class="eyebrow-w c-dark-green-tint-2">
-                            <div split-text="lines" class="text-eyebrow">Barcelona, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Growth & Analytics</div>
                           </div>
                           <div class="horizontal-item-img-w is-home8"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baaedf821dd2e3a7c74_ln-home-horiz-8.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baaedf821dd2e3a7c74_ln-home-horiz-8-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baaedf821dd2e3a7c74_ln-home-horiz-8-p-800.webp 800w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baaedf821dd2e3a7c74_ln-home-horiz-8-p-1080.webp 1080w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302baaedf821dd2e3a7c74_ln-home-horiz-8.webp 1461w"
-                              alt="Lando taking photo out of a plane" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_42_8e8b7b_391e6220105f4145b8aaf4efc69017af~mv2.jpg"
+                              loading="lazy" alt="Client Growth Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                       <div class="horizontal-item-w is-text-callout is-home-callout-2">
                         <div class="horizontal-item-layout">
                           <div class="horizontal-item-text-layout">
-                            <div split-text="lines" class="horizontal-item-text c-dark-green-tint-1">Since I was 7 years
-                              old and had my first experience with kart racing, I’ve worked tirelessly to make that
-                              dream come true.</div>
+                            <div split-text="lines" class="horizontal-item-text c-dark-green-tint-1">Building scalable, high-performance websites engineered to support long-term growth.</div>
                             <div class="horizontal-rive-placeholder"><img
-                                src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/67e7eeaf67d51519b546828d_ln4-signature-dark-green.webp"
-                                loading="lazy" alt="" class="image" /></div>
+                                src="/images/montclair-logo.png"
+                                loading="lazy" alt="" class="image" style="max-height: 2.5rem; filter: brightness(0);" /></div>
                           </div>
                         </div>
                       </div>
@@ -1841,25 +1885,21 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                       <div class="horizontal-item-w is-home10">
                         <div class="horizontal-item-layout is-home10">
                           <div class="eyebrow-w c-dark-green-tint-2">
-                            <div split-text="lines" class="text-eyebrow">austria, 2020</div>
+                            <div split-text="lines" class="text-eyebrow">Scalable Systems</div>
                           </div>
                           <div class="horizontal-item-img-w is-home10"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babb87c5f19ec131093_ln-home-horiz-9.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babb87c5f19ec131093_ln-home-horiz-9-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302babb87c5f19ec131093_ln-home-horiz-9.webp 761w"
-                              alt="Lando lifting trophy" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_48_f90a1dc4-095a-4109-b811-2abfba30ba7c.jpg"
+                              loading="lazy" alt="Scalable Systems Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                       <div class="horizontal-item-w is-home9 neg-margin">
                         <div class="horizontal-item-layout">
                           <div class="eyebrow-w c-dark-green-tint-2">
-                            <div split-text="lines" class="text-eyebrow">US, 2024</div>
+                            <div split-text="lines" class="text-eyebrow">Results-Driven</div>
                           </div>
                           <div class="horizontal-item-img-w is-home9"><img
-                              src="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302bab4f762cdbc5e93415_ln-home-horiz-10.webp"
-                              loading="lazy" sizes="100vw"
-                              srcset="https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302bab4f762cdbc5e93415_ln-home-horiz-10-p-500.webp 500w, https://cdn.prod.website-files.com/67b5a02dc5d338960b17a7e9/68302bab4f762cdbc5e93415_ln-home-horiz-10.webp 659w"
-                              alt="Lando celebrating a win" class="image is-horizontal-scroll" /></div>
+                              src="/images/imgi_5_f90a1dc4-095a-4109-b811-2abfba30ba7c.jpg"
+                              loading="lazy" alt="Results Driven Showcase" class="image is-horizontal-scroll" /></div>
                         </div>
                       </div>
                     </div>
