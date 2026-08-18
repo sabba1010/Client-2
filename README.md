@@ -1,4 +1,4 @@
-# Lando Norris — Local Mirror
+# Monclair Studios — Local Mirror
 
 A fully self-hosted mirror of [landonorris.com](https://landonorris.com), running the original Webflow + OFF+BRAND JS, Rive 3D animations, and a Three.js / WebGL helmet hero — all from local assets.
 
