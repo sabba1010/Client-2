@@ -3963,7 +3963,7 @@ void main() {
           // color.b += 0.05;
           // color *= 1.1;
 
-          vec4 diffuseColor = vec4( color, opacity );
+          vec4 diffuseColor = vec4( color, opacity * textureDefaultDiffuse.a );
           // diffuseColor = vec4(vec3(step(1.0 - hoverTransition, uHelmetHover)), opacity);
 
           // #include <tonemapping_fragment>
