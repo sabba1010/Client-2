@@ -138,7 +138,12 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
     /* Client's 3 Choice Color Palette Implementation */
     /* Color 1: #D8D20E (Primary Accent / Gold Lime) */
     .c-lime,
-    .c-lime-off,
+    .c-lime-off {
+      color: #D8D20E !important;
+      background-color: transparent !important;
+      background: none !important;
+    }
+
     .btn-w[data-theme="lime"],
     button[data-theme="lime"] {
       color: #111112 !important;
@@ -1648,19 +1653,19 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
         0% {
           transform: scale(0.8);
           opacity: 0;
-          filter: brightness(0) blur(6px);
+          filter: brightness(0) invert(1) blur(6px);
         }
 
         60% {
           transform: scale(1.06);
           opacity: 1;
-          filter: brightness(0) blur(0px);
+          filter: brightness(0) invert(1) blur(0px);
         }
 
         100% {
           transform: scale(1);
           opacity: 1;
-          filter: brightness(0) blur(0px);
+          filter: brightness(0) invert(1) blur(0px);
         }
       }
 
@@ -1708,7 +1713,7 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
     <div class="transition-logo-w"
       style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; width: 100%;">
       <img src="/images/montclair-logo.png" alt="Montclair Studios Logo" class="preloader-logo-anim"
-        style="max-height: 130px; width: auto; object-fit: contain; filter: brightness(0);" />
+        style="max-height: 130px; width: auto; object-fit: contain; filter: brightness(0) invert(1);" />
 
       <!-- Sleek Animated Progress Bar -->
       <div
@@ -2887,29 +2892,25 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                   <div data-anim-high="right, dark-green-tint-1" split-text="lines"
                     class="text-cta-short-intro font-brier">Follow Montclair Studios on social media</div>
                 </div>
-                <div class="callout-socials-links-layout"><a data-anim="text-hover"
-                    href="https://www.tiktok.com/@landonorris" target="_blank" class="text-link-w w-inline-block">
+                <div class="callout-socials-links-layout"><a data-nav-link-highlight="" data-anim="text-hover"
+                    href="#" class="text-link-w w-inline-block">
                     <div class="text-clip-w">
-                      <div data-anim-high="right, dark-green-tint-1" split-text="lines,chars" class="btn-text">tiktok
-                      </div>
+                      <div split-text="chars" class="btn-text">tiktok</div>
                     </div>
-                  </a><a data-anim="text-hover" href="https://www.instagram.com/lando" target="_blank"
+                  </a><a data-nav-link-highlight="" data-anim="text-hover" href="#"
                     class="text-link-w w-inline-block">
                     <div class="text-clip-w">
-                      <div data-anim-high="right, dark-green-tint-1" split-text="lines,chars" class="btn-text">instagram
-                      </div>
+                      <div split-text="chars" class="btn-text">instagram</div>
                     </div>
-                  </a><a data-anim="text-hover" href="https://www.youtube.com/@LandoNorris" target="_blank"
+                  </a><a data-nav-link-highlight="" data-anim="text-hover" href="#"
                     class="text-link-w w-inline-block">
                     <div class="text-clip-w">
-                      <div data-anim-high="right, dark-green-tint-1" split-text="lines,chars" class="btn-text">Youtube
-                      </div>
+                      <div split-text="chars" class="btn-text">youtube</div>
                     </div>
-                  </a><a data-anim="text-hover" href="https://www.twitch.tv/landonorris" target="_blank"
+                  </a><a data-nav-link-highlight="" data-anim="text-hover" href="#"
                     class="text-link-w w-inline-block">
                     <div class="text-clip-w">
-                      <div data-anim-high="right, dark-green-tint-1" split-text="lines,chars" class="btn-text">Twitch
-                      </div>
+                      <div split-text="chars" class="btn-text">Twitch</div>
                     </div>
                   </a></div>
               </div>
@@ -2961,24 +2962,24 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                         <div class="text-eyebrow">Follow On</div>
                       </div>
                       <div class="footer-links-layout"><a data-anim="text-hover"
-                          href="https://www.tiktok.com/@landonorris" target="_blank" class="text-link-w w-inline-block">
+                          href="#" class="text-link-w w-inline-block">
                           <div class="text-clip-w">
                             <div data-anim-high="right, lime" split-text="lines,chars" class="btn-text is-footer">Tiktok
                             </div>
                           </div>
-                        </a><a data-anim="text-hover" href="https://www.instagram.com/lando" target="_blank"
+                        </a><a data-anim="text-hover" href="#"
                           class="text-link-w w-inline-block">
                           <div class="text-clip-w">
                             <div data-anim-high="right, lime" split-text="lines,chars" class="btn-text is-footer">
                               Instagram</div>
                           </div>
-                        </a><a data-anim="text-hover" href="https://www.youtube.com/@LandoNorris" target="_blank"
+                        </a><a data-anim="text-hover" href="#"
                           class="text-link-w w-inline-block">
                           <div class="text-clip-w">
                             <div data-anim-high="right, lime" split-text="lines,chars" class="btn-text is-footer">
                               Youtube</div>
                           </div>
-                        </a><a data-anim="text-hover" href="https://www.twitch.tv/landonorris" target="_blank"
+                        </a><a data-anim="text-hover" href="#"
                           class="text-link-w w-inline-block">
                           <div class="text-clip-w">
                             <div data-anim-high="right, lime" split-text="lines,chars" class="btn-text is-footer">Twitch
