@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "sirv . --port 5173 --host --single --dev --no-clear",
-    "start": "sirv . --port 5173 --host --single"
+    "dev": "node api.js && sirv . --port 5173 --host --single --dev --no-clear",
+    "start": "node api.js && sirv . --port 5173 --host --single"
   },
   "devDependencies": {
     "sharp": "^0.35.3",
