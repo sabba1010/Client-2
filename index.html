@@ -305,11 +305,23 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
 
     .otot-home-img-w.is-1 {
       aspect-ratio: auto !important;
-      width: clamp(16vw, 20vw, 24vw) !important;
-      max-width: 24vw !important;
-      height: min(85vh, 700px) !important;
-      left: 0 !important;
+      width: clamp(22vw, 28vw, 34vw) !important;
+      max-width: 34vw !important;
+      height: auto !important;
+      max-height: 100vh !important;
+      position: absolute !important;
+      left: -3vw !important;
       right: auto !important;
+      bottom: 0 !important;
+      top: auto !important;
+      overflow: visible !important;
+    }
+
+    .otot-home-img-w.is-1 img {
+      object-fit: contain !important;
+      object-position: bottom left !important;
+      width: 100% !important;
+      height: auto !important;
     }
 
     .otot-home-img-w.is-2 {
@@ -2165,6 +2177,8 @@ _iub.csConfiguration = {"lang":"en","preferenceCookie":{"expireAfter":180},"site
                   </div>
                 </div>
                 <div class="otot-home-bg">
+                  <div class="otot-home-img-w is-1"><img src="/images/leftside.jpg.png" loading="lazy"
+                      alt="Left Side Showcase" class="otot-home-img" /></div>
                   <div class="otot-home-img-w is-2"><img src="/images/rightside.png" loading="lazy"
                       alt="Montclair Studios Right Showcase" class="otot-home-img" /></div>
                 </div>
